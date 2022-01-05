@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         peopleIncrement.wraps = true
         peopleIncrement.autorepeat = true
         peopleIncrement.maximumValue = 30
-        billAmountTextField.keyboardType = .asciiCapableNumberPad
+        self.billAmountTextField.keyboardType = UIKeyboardType.decimalPad
         billAmountTextField.becomeFirstResponder()
     }
     
