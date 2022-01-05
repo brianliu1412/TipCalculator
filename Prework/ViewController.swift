@@ -16,22 +16,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var peopleIncrement: UIStepper!
     @IBOutlet weak var numPeople: UILabel!
     
+    @IBOutlet weak var settings: UIBarButtonItem!
     @IBOutlet weak var totalPerPerson: UILabel!
-    var totalNum = 0.0
-    
+    var totalNum = 0.00
     var tipPercent = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        // Do any additional setup after loading the view.
+        self.title = "Tip Calculator"
         peopleIncrement.wraps = true
         peopleIncrement.autorepeat = true
         peopleIncrement.maximumValue = 30
+        billAmountTextField.keyboardType = .asciiCapableNumberPad
+        billAmountTextField.becomeFirstResponder()
     }
     
     
-
+    
+    
+    
+    
+    
     @IBAction func billAmountChange(_ sender: Any) {
         let bill = Double(billAmountTextField.text!) ?? 0
         let tipAmount = bill * (Double(tipPercent) / 100)
@@ -39,6 +47,7 @@ class ViewController: UIViewController {
         let people = Double(numPeople.text!) ?? 0
         let totalPP = total / people
         
+        totalNum = total
         totalPerPerson.text = String(format: "$%.2f", totalPP)
         tipAmountLabel.text = String(format: "$%.2f", tipAmount)
         totalLabel.text = String(format: "$%.2f", total)
@@ -66,7 +75,11 @@ class ViewController: UIViewController {
     
     @IBAction func peopleValueChanged(_ sender: UIStepper) {
         let people = Int(sender.value)
+        
+        let total = Double(totalNum)
+        let totalPerP = total / Double(people)
         numPeople.text = String(people).description
+        totalPerPerson.text = String(format: "$%.2f", totalPerP)
     
     
     }
