@@ -22,10 +22,10 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [] List anything else that you can get done to improve the app functionality!
-- [] Tip slider implemented instead of segemented control.
-- [] Added option to divide amount to pay by person.
-- [] Implemented a stepper to increment number of people to split the bill.
+- [ ] List anything else that you can get done to improve the app functionality!
+- [ ] Tip slider implemented instead of segemented control.
+- [ ] Added option to divide amount to pay by person.
+- [ ] Implemented a stepper to increment number of people to split the bill.
 
 ## Video Walkthrough
 
