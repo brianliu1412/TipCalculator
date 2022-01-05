@@ -1,10 +1,10 @@
-# Pre-work - *Group Tip Calculator*
+# Pre-work - Group Tip Calculator
 
-**Group Tip Calculator** is a tip calculator application for iOS.
+Group Tip Calculator is a tip calculator application for iOS.
 
-Submitted by: **Brian Liu*
+Submitted by: Brian Liu
 
-Time spent: **5** hours spent in total
+Time spent: 5 hours spent in total
 
 ## User Stories
 
@@ -22,7 +22,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+
 - [x] Tip slider implemented instead of segemented control.
 - [x] Added option to divide amount to pay by person.
 - [x] Implemented a stepper to increment number of people to split the bill.
@@ -36,7 +36,6 @@ Here's a walkthrough of implemented user stories:
 
 ## Notes
 
-Describe any challenges encountered while building the app.
 I had trouble implementing the settings page, when I made the keypad always show in the first window, the settings page would break the app upon opening. 
 
 ## License
